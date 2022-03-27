@@ -1,0 +1,408 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Pedro;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    background-color: #0C0C0C;
+}
+Header{
+    width:100%;
+    display: flex;
+    padding: 20px 20px;
+    position: relative;
+    border-bottom:2px solid #F9F9F9;
+  
+    background-color: #0C0C0C;
+    z-index: 999;
+
+}
+Header h1{
+    text-align: left;
+    font-size: 20px;
+    color:#F9F9F9;
+}
+Header nav{   
+    position: absolute;
+    right: 20px;
+}
+Header nav ul li{
+    display: inline-block;
+    margin:0 30px;
+    cursor:pointer;
+    color:#F9F9F9;
+}
+div.header{
+    width: 100%;
+    height: 90%;
+  
+    display: flex;
+}
+div.header div.text{
+    width: 50%;
+    height: 100%;
+    position: relative;
+   
+    justify-content: center;
+}
+div.header div.anime{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+div.header div.text div{
+position: absolute;
+top: 40%;
+left: 30%;
+transform: translate(-30%,-40%);
+}
+div.header div.text div p{
+    font-size:25px;
+}
+div.header div.text div h1{
+    font-size: 40px;
+}
+div.header div.text div a{
+    text-decoration: none;
+    background:#00DF5E;
+    color:white;
+    margin-top: 20px;
+    padding:10px 30px;
+    display: inline-block;
+    border-radius:4px;
+}
+section.who{
+    display:flex;
+    align-items: center;
+    width:100%;
+   
+}
+section.who div.text{
+    position: relative;
+    width:50%;
+    
+    color:#F9F9F9
+}
+
+section.who div.text div{
+    width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+section.who div.text div h1{
+    font-size:35px;
+    margin-bottom: 20px;
+}
+section.who div.text div p{
+    width:70%;
+}
+section.who div.anime{
+    width:50%;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.who div.anime img{
+width:100%;
+}
+
+section.project{
+    width:100%;
+    height:50%;
+    position: relative;
+    text-align: center;
+}
+section.project a{
+    
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    background:blue;
+    color:white;
+    
+    padding:10px 30px;
+    
+}
+section.project h1{
+    font-size: 35px;
+}
+section.know{
+    width: 90%;
+    margin: 0 auto;
+   
+    display: flex;
+    
+}
+section.know div.text{
+    text-align: center;
+    width: 50%;
+    padding:0 20px;
+}
+section.know div.text p{
+    color:#828282;
+    text-align: center;
+}
+section.know div.text h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+    color:#F9F9F9;
+}
+section.know div.block{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+section.know div.block div{
+    width:140px;
+    height:140px;
+  
+    margin:10px;
+}
+section.service{
+    width: 100%;
+    
+    margin-top:50px;
+  
+    text-align:center;
+}
+section.service>div {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+section.service div div.cards{
+    width:300px;
+    height: 350px;
+    margin: 10px 10px;
+    
+    
+}
+footer{
+    width:100%;
+    padding:10px 0;
+    text-align: center;
+    margin-top:10px;
+}
+@font-face {
+    font-family: Pedro;
+    src: url('ConcertOne-Regular.ttf');
+}
+div.grid {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 428px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+div.grid div{
+    width: calc(100% / 14);
+    height: calc(100/5);
+    background-color: #00DF5E;
+    margin:2px;
+    pointer-events: none;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    
+    font-size: 14px;
+}
+header nav ul li:hover{
+    border-bottom:2px solid  #00DF5E ;
+    padding-bottom: 5px;
+}
+section.know img{
+    width:60%;
+}
+section.know div.block div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:2px solid #00DF5E;
+}
+div.icon img{
+ width:80px;
+
+}
+div.icon{
+     text-align: left;
+     padding:30px 20px;
+     
+}
+section.service div.cards{
+    text-align: left;
+    padding:0 10px;
+    border: 2px solid #00DF5E;
+    color:#F9F9F9;
+    
+}
+section.service div.cards h1{
+    margin-bottom: 10px;
+    color:#F9F9F9;
+}
+footer{
+    border-top:2px solid #F9F9F9;
+    color: #F9F9F9;
+}
+section.service a{
+    
+    display:inline-block;
+   
+    text-decoration: none;
+    background:blue;
+    color:white;
+    
+    padding:10px 30px;
+    
+}
+
+@media screen and (max-width:1219px){
+ section.know{
+     width:100%;
+    flex-wrap: wrap;
+     margin: 0 0;
+     text-align: left;
+    padding: 0;
+     justify-content: center;
+ }
+ section.know div.text{
+     width:100%;
+     margin: 0 auto;
+     text-align: center;
+      height: 250px;
+    
+    padding: 0 5px;
+ }
+ section.know div.block{
+   width: 50%;
+  
+    justify-content: center;
+     padding:0;
+
+    
+   
+ }
+ @media screen and (max-width:660px){
+     section.know div.block{
+         width: 100%;
+     }
+ }
+ @media screen and (max-width:336px){
+     section.know div.block div{
+         width:100%;
+     }
+     section.know div.block div img{
+         width:30%;
+     }
+     section.know div.text{
+         height:380px;
+     }
+ }
+}
+
+@media screen and (max-width:496px){
+   
+    section.know div.text{
+        height:430px;
+    }
+}
+@media screen and (max-width:869px){
+    div.header{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    div.header div.anime{
+        display: none;
+
+    }
+    div.header div.text{
+        width:100%;
+        text-align: center;
+    }
+    div.header div.text div{
+        position:static;
+margin-top:100px;
+transform: translate(0,0);
+    }
+}
+@media screen and (max-width:785px){
+    section.who{
+        display: inline-block;
+        height:40%;
+    }
+    section.who img{
+        display: none;
+        height:auto;
+    }
+    section.who div.text div{
+        width: 100%;
+        
+        text-align: center;
+    }
+    section.who div.text{
+        width:100%;
+        margin:0 auto;
+        text-align: center;
+    }
+    section.who h1{
+        text-align: center;
+    }
+    section.who div.text div p{
+        width: 100%;
+        text-align: justify;
+        padding: 0 50px;
+    }
+}
+nav.nav{
+    width:100%;
+    text-align: center;
+    color: #F9F9F9;
+    display: none;
+    
+    z-index: 99900;
+    background-color: #0C0C0C;
+}
+nav.nav li{
+    border-bottom: 1px solid #F9F9F9;
+    padding: 10px 0;
+    cursor: pointer;
+}
+Header img{
+    width:30px;
+    position:absolute;
+    right:20px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:796px){
+    Header nav{
+        display: none;
+    }
+    nav.nav{
+        position: relative;
+    }
+    Header img{
+        display: block;
+    }
+}
